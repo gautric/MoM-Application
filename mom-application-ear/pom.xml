@@ -19,7 +19,7 @@
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-ear-plugin</artifactId>
 				<configuration>
-					<version>6</version>
+					<version>7</version>
 					<finalName>mom-application</finalName>
 					<displayName>${project.name}</displayName>
 					<generateApplicationXml>true</generateApplicationXml>
@@ -38,11 +38,11 @@
 							<artifactId>mom-application-api</artifactId>
 							<bundleDir>lib</bundleDir>
 						</jarModule>
-						<jarModule>
+						<!-- <jarModule>
 							<groupId>com.thoughtworks.xstream</groupId>
 							<artifactId>xstream</artifactId>
 							<bundleDir>lib</bundleDir>
-						</jarModule>
+						</jarModule> -->
 					</modules>
 				</configuration>
 			</plugin>
@@ -64,10 +64,5 @@
 			<groupId>net.a.g.jee.mom</groupId>
 			<artifactId>mom-application-api</artifactId>
 		</dependency>
-		<dependency>
-			<groupId>com.thoughtworks.xstream</groupId>
-			<artifactId>xstream</artifactId>
-		</dependency>
 	</dependencies>
-
 </project>
